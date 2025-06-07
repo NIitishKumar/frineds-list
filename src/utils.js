@@ -4,6 +4,6 @@ export const capitalizeFirstChar = (str) => {
 };
 
 export function containsSpecialChars(str) {
-    const specialCharPattern = /[^a-zA-Z ]/;
+    const specialCharPattern = /[^a-zA-Z0-9 ]/;
     return specialCharPattern.test(str);
 };
