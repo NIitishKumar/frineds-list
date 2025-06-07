@@ -16,7 +16,7 @@ export default function FriendCard({
     >
       <div className="flex items-center gap-4 flex-1">
         <div className="relative">
-          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg">
+          <div className={`w-12 h-12 ${friend.isFavorite ? 'bg-gradient-to-r from-pink-500 via-red-500 to-fuchsia-500' : 'bg-gradient-to-br from-blue-500 to-purple-600'} rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg`}>
             {getInitials(friend.name)}
           </div>
         </div>
