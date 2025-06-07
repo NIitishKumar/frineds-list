@@ -1,10 +1,11 @@
 import React from 'react';
+import { capitalizeFirstChar } from '../utils';
 
 export default function FriendCard({ friend, onDelete, onToggleFavorite }) {
   return (
     <div className='cardContainer'>
-      <div className='cardHeader'>
-        <h2>{friend.name?.toUpperCase()}</h2>
+      <div className='cardHeader border'>
+        <h3 className='name'><span style={{ color: 'black' }}>Name : </span>{capitalizeFirstChar(friend.name)}</h3>
         <p>{friend.favorite ? '⭐️' : ''}</p>
       </div>
 

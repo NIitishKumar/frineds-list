@@ -4,6 +4,7 @@ import React, { useMemo, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addFriend, deleteFriend, toggleFavorite, sortByFavorite } from '../store/friendsSlice';
 import FriendCard from './FriendCard';
+import { containsSpecialChars } from '../utils';
 
 export default function FriendList() {
     const [search, setSearch] = useState('');
@@ -39,13 +40,24 @@ export default function FriendList() {
     return filtered.slice(start, start + perPage);
   }, [filtered, currentPage]);
 
+  const setInputName = (e) => { 
+    if (containsSpecialChars(e.target.value)) {
+      alert('Please enter a valid name without special characters or without numeric value.');
+      return;
+    }
+    setInput(e.target.value);
+    if (e.key === 'Enter') {
+      handleAdd();
+    }
+}
+
     return (
       <div id='friendListContainer'>
         <div style={{ minWidth: '300px' }}>
           <input
               type="text"
               value={input}
-              onChange={e => setInput(e.target.value)}
+              onChange={setInputName}
               placeholder="Add new friend"
               className='inputField'
               id='addFriendInput'
