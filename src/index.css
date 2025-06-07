@@ -66,6 +66,7 @@ code {
   display: flex;
   justify-content: space-between;
   padding: 0px 10px;
+  margin-top: 10px;
 }
 
 .border {
@@ -83,7 +84,7 @@ code {
 }
 
 #searchInput {
-  width: 250px;
+  width: 300px;
 }
 
 .pagination {
@@ -109,7 +110,7 @@ code {
 
 #addFriendBtn {
   color: white;
-  padding: 5px 20px;
+  padding: 5px 30px;
 }
 
 #friendListContainer {

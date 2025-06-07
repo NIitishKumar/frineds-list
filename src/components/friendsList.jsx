@@ -70,7 +70,7 @@ export default function FriendList() {
                       type="text"
                       value={search}
                       onChange={e => setSearch(e.target.value)}
-                      placeholder="Search friends"
+                      placeholder="Type here to search friends"
                       className='inputField'
                       id='searchInput'
               />
