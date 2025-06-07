@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NIitishKumar/frineds-list/static/css/main.7f1ae10f.css",
+    "main.js": "/NIitishKumar/frineds-list/static/js/main.b8c94593.js",
+    "static/js/453.8af3bfaa.chunk.js": "/NIitishKumar/frineds-list/static/js/453.8af3bfaa.chunk.js",
+    "index.html": "/NIitishKumar/frineds-list/index.html",
+    "main.7f1ae10f.css.map": "/NIitishKumar/frineds-list/static/css/main.7f1ae10f.css.map",
+    "main.b8c94593.js.map": "/NIitishKumar/frineds-list/static/js/main.b8c94593.js.map",
+    "453.8af3bfaa.chunk.js.map": "/NIitishKumar/frineds-list/static/js/453.8af3bfaa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f1ae10f.css",
+    "static/js/main.b8c94593.js"
+  ]
+}
