@@ -15,6 +15,7 @@ code {
 .container {
   /* max-width: 1300px; */
   display: flex;
+  flex-wrap: wrap;
   margin: 4% 5%;
 }
 
@@ -78,13 +79,17 @@ code {
   align-items: center;
   margin-bottom: 20px;
   gap: 10px;
-  width: 500px;
+  /* width: 500px; */
+}
+
+#searchInput {
+  width: 250px;
 }
 
 .pagination {
   margin-top: 20px;
-  position: absolute;
-  top: 50%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 #totalPagesCount {
@@ -111,6 +116,7 @@ code {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .contentContainer {

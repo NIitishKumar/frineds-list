@@ -72,6 +72,7 @@ export default function FriendList() {
                       onChange={e => setSearch(e.target.value)}
                       placeholder="Search friends"
                       className='inputField'
+                      id='searchInput'
               />
             </div>
                 <div className='cards'>
