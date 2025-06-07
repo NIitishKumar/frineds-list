@@ -2,7 +2,7 @@
   "name": "metalbook",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/NIitishKumar/frineds-list",
+  "homepage": "https://niitishkumar.github.io/frineds-list",
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
     "@testing-library/dom": "^10.4.0",
