@@ -17,7 +17,6 @@ const InputSection = ({
     }
   };
   const addFriend = () => {
-    console.log(newFriendName);
     if (newFriendName.trim()) {
       const newFriend = {
         id: Date.now(),
